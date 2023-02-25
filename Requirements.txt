@@ -1,0 +1,31 @@
+Requirements:
+1: Importing:
+pandas
+numpy
+nltk
+seaborn
+from nltk.corpus import stopwords
+stopwords.words('english')
+import string 
+string.punctuation
+from nltk.stem.porter import PorterStemmer
+ps=PorterStemmer()
+from wordcloud import WordCloud
+from collections import Counter
+from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
+from sklearn.model_selection import train_test_splitfrom sklearn.naive_bayes import GaussianNB,MultinomialNB,BernoulliNB
+from sklearn.metrics import accuracy_score,confusion_matrix,precision_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import BaggingClassifier
+from sklearn.ensemble import ExtraTreesClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from xgboost import XGBClassifier
+from sklearn.ensemble import VotingClassifier
+from sklearn.ensemble import StackingClassifier
+import pickle
